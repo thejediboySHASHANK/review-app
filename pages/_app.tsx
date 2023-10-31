@@ -10,7 +10,11 @@ import NextNProgress from 'nextjs-progressbar'
 import { AuthenticationProvider } from '@/context/Authentication'
 import '@/styles/globals.css'
 import ModalWrapper from '@/wrappers/ModalWrapper'
+<<<<<<< HEAD
+import DashboardAccessWrapper from '@/wrappers/DashboardAccessWrapper'
+=======
 import Head from 'next/head'
+>>>>>>> upstream/main
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -51,7 +55,9 @@ export default function App({ Component, pageProps }: AppProps) {
             >
               <ModalWrapper />
               <Toaster position="top-right" />
-              <Component {...pageProps} />
+              <DashboardAccessWrapper>
+                <Component {...pageProps} />
+              </DashboardAccessWrapper>
             </NextThemesProvider>
           </AuthenticationProvider>
           <ReactQueryDevtools />
