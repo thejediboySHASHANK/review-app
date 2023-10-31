@@ -74,7 +74,8 @@ To set up the development environment locally, follow these steps [Quick video g
    ```
    NEXT_PUBLIC_AWS_API_URL=http://localhost:8000/development
    NEXT_PUBLIC_APP_DASHBOARD_DOMAIN=app
-   NEXT_PUBLIC_APP_DOMAIN=localhost:3000
+   NEXT_PUBLIC_APP_PUBLIC_DOMAIN=localhost:3000
+   NEXT_PUBLIC_APP_CUSTOM_DOMAIN=localhost:3000
    ```
 
    You can also find similar environment variables in `.env.example`.
